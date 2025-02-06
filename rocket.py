@@ -2,6 +2,8 @@ import datetime
 import matplotlib.pyplot as plt
 from rocketpy import Environment, SolidMotor, Rocket
 # motor can be SolidMotor, LiquidMotor, or HybridMotor
+from rocketpy import Fluid, CylindricalTank, MassFlowRateBasedTank, HybridMotor
+# necessary methods for a Hybrid Motor
 
 # Launch site location:
 env = Environment(latitude=32.990254, longitude=-106.974998, elevation=1400)
@@ -41,6 +43,55 @@ Pro75M1670 = SolidMotor(
 )
 
 Pro75M1670.info() # Displays information about the motor, including plot
+
+
+## Hybrid Motor
+# Define the fluids
+oxidizer_liq = Fluid(name="N2O_l", density=1220)
+oxidizer_gas = Fluid(name="N2O_g", density=1.9277)
+
+# Define tank geometry
+tank_shape = CylindricalTank(115 / 2000, 0.705)
+
+# Define tank
+oxidizer_tank = MassFlowRateBasedTank(
+    name="oxidizer tank",
+    geometry=tank_shape,
+    flux_time=5.2,
+    initial_liquid_mass=4.11,
+    initial_gas_mass=0,
+    liquid_mass_flow_rate_in=0,
+    liquid_mass_flow_rate_out=(4.11 - 0.5) / 5.2,
+    gas_mass_flow_rate_in=0,
+    gas_mass_flow_rate_out=0,
+    liquid=oxidizer_liq,
+    gas=oxidizer_gas,
+)
+
+example_hybrid = HybridMotor(
+    thrust_source=lambda t: 2000 - (2000 - 1400) / 5.2 * t, #Thrust source can be any function, constant, or CSV/eng file
+    dry_mass=2,
+    dry_inertia=(0.125, 0.125, 0.002),
+    nozzle_radius=63.36 / 2000,
+    grain_number=4,
+    grain_separation=0,
+    grain_outer_radius=0.0575,
+    grain_initial_inner_radius=0.025,
+    grain_initial_height=0.1375,
+    grain_density=900,
+    grains_center_of_mass_position=0.384,
+    center_of_dry_mass_position=0.284,
+    nozzle_position=0,
+    burn_time=5.2,
+    throat_radius=26 / 2000,
+)
+
+# Add oxidizer tank to Hybrid motor
+example_hybrid.add_tank(
+  tank = oxidizer_tank, position = 1.0615
+)
+
+example_hybrid.all_info()
 
 # Creating a Rocket
 
