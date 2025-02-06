@@ -2,7 +2,7 @@ import datetime
 import matplotlib.pyplot as plt
 from rocketpy import Environment, SolidMotor, Rocket
 # motor can be SolidMotor, LiquidMotor, or HybridMotor
-# test
+
 # Launch site location:
 env = Environment(latitude=32.990254, longitude=-106.974998, elevation=1400)
 #environment uses the location to gather weather conditions from organisations such as NOAA and ECMWF
