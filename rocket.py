@@ -5,6 +5,10 @@ from rocketpy import Environment, SolidMotor, Rocket
 from rocketpy import Fluid, CylindricalTank, MassFlowRateBasedTank, HybridMotor
 # necessary methods for a Hybrid Motor
 
+#notes:
+# everything is in basic SL units (kg, m, kgm^2, s, etc.)
+
+
 # Launch site location:
 env = Environment(latitude=32.990254, longitude=-106.974998, elevation=1400)
 #environment uses the location to gather weather conditions from organisations such as NOAA and ECMWF
@@ -19,7 +23,8 @@ env.set_date( # must use a tuple of year, month, day, hour
 # Set atmospheric model, using GFS forecasts
 env.set_atmospheric_model(type="Forecast", file="GFS")
 
-env.info() # this will let us know what the weather will look like, including plot
+if __name__ == "__main__": #prevents this info from showing unless I exec this script
+    env.info() # this will let us know what the weather will look like, including plot
 
 # Motor
 
@@ -41,8 +46,8 @@ Pro75M1670 = SolidMotor(
     throat_radius=11 / 1000,
     coordinate_system_orientation="nozzle_to_combustion_chamber",
 )
-
-Pro75M1670.info() # Displays information about the motor, including plot
+if __name__ == "__main__":
+    Pro75M1670.info() # Displays information about the motor, including plot
 
 
 ## Hybrid Motor
@@ -90,10 +95,10 @@ example_hybrid = HybridMotor(
 example_hybrid.add_tank(
   tank = oxidizer_tank, position = 1.0615
 )
+if __name__ == "__main__":
+    example_hybrid.all_info()
 
-example_hybrid.all_info()
-
-# Creating a Rocket
+## Creating a Rocket
 
 # Create rocket object
 calisto = Rocket(
@@ -155,14 +160,17 @@ drogue = calisto.add_parachute(
     lag=1.5,
     noise=(0, 8.3, 0.5),
 )
+if __name__ == "__main__":
+    #Plot static margin to check stability
 
-#Plot static margin to check stability
-calisto.plots.static_margin() #sim will fail if negative, or too high
+    calisto.plots.static_margin() #sim will fail if negative, or too high
 
-#Draw rocket
-calisto.draw() #this helps check that all components are in right position
+    #Draw rocket
+    calisto.draw() #this helps check that all components are in right position
 
-## Rocket has been defined, now we run the simulation.
-# Going to try to run it in a separate file
-# This is so we can define the rocket and ensure everything is correct without
-#crashing the simulation, and then run the simulation when ready.
+    ## Rocket has been defined, now we run the simulation.
+    # Going to try to run it in a separate file
+    # This is so we can define the rocket and ensure everything is correct without
+    #crashing the simulation, and then run the simulation when ready.
+
+#[TODO] - clean up code
