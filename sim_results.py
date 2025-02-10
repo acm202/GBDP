@@ -1,6 +1,5 @@
 from rocketpy import Environment, Flight
-from rocket import calisto
-from flight_sim import test_flight
+from sim import rocket, test_flight
 
 # test_flight .prints and .plots attributes (test_flight.prints)
 # Can also use (test_flight.all_info()) for all the plots, or just info() for numerical results
@@ -79,7 +78,7 @@ print(test_flight.speed.source)
 
 #exporting rocketpy.Flight.angle_of_attack() and .mach_number()
 test_flight.export_data(
-    "calisto_flight_data.csv", #file name
+    "rocket_flight_data.csv", #file name
     "angle_of_attack", #attribute to export
     "mach_number",
     time_step=1.0, #sets sampling rate, if left empty defaults to every instance of the solver
@@ -88,7 +87,7 @@ test_flight.export_data(
 ## Saving and storing plots (can be as png, jpg, pdf, and more)
 
 #store rocket drawing
-calisto.draw(filename="calisto_drawing.png")
+rocket.draw(filename="rocket_drawing.png")
 #speed plot
 test_flight.speed.plot(filename="speed_plot.jpg")
 #trajectory plot
@@ -121,7 +120,7 @@ from rocketpy import Function
 import copy
 
 # Prepare a copy of the rocket
-calisto2 = copy.deepcopy(calisto)
+rocket2 = copy.deepcopy(rocket)
 
 # Prepare Environment Class
 custom_env = Environment()
@@ -132,9 +131,9 @@ simulation_results = []
 
 for factor in [-0.5, -0.2, 0.1, 0.4, 0.7]:
     # Modify rocket fin set by removing previous one and adding new one
-    calisto2.aerodynamic_surfaces.pop(-1)
+    rocket2.aerodynamic_surfaces.pop(-1)
 
-    fin_set = calisto2.add_trapezoidal_fins(
+    fin_set = rocket2.add_trapezoidal_fins(
         n=4,
         root_chord=0.120,
         tip_chord=0.040,
@@ -143,7 +142,7 @@ for factor in [-0.5, -0.2, 0.1, 0.4, 0.7]:
     )
     # Simulate
     test_flight = Flight(
-        rocket=calisto2,
+        rocket=rocket2,
         environment=custom_env,
         rail_length=5.2,
         inclination=90,
@@ -154,9 +153,9 @@ for factor in [-0.5, -0.2, 0.1, 0.4, 0.7]:
         verbose=False,
     )
     # Store Results
-    static_margin_at_ignition = calisto2.static_margin(0) #indexed by time
-    static_margin_at_out_of_rail = calisto2.static_margin(test_flight.out_of_rail_time)
-    static_margin_at_steady_state = calisto2.static_margin(test_flight.t_final)
+    static_margin_at_ignition = rocket2.static_margin(0) #indexed by time
+    static_margin_at_out_of_rail = rocket2.static_margin(test_flight.out_of_rail_time)
+    static_margin_at_steady_state = rocket2.static_margin(test_flight.t_final)
     simulation_results += [
         (
             test_flight.attitude_angle, #first element of tuple

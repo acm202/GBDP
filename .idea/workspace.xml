@@ -4,98 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3af41591-abc3-4b5d-921d-7025fec00640" name="Changes" comment="Sim_results created&#10;__main__ exception">
-      <change afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/AirBrakesItterator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/CelsiusToKelvin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/MonteCarlo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/data/GBDPDATA/AirBrakes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/temperature_kelvin_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3af41591-abc3-4b5d-921d-7025fec00640" name="Changes" comment="UI and reorg">
+      <change afterPath="$PROJECT_DIR$/montecarlo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/montecarlo_results.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/FUNDING.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/auto-assign.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/pull_request_template.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/workflows/auto-assign.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/workflows/codecov.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/workflows/lint_black.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/workflows/publish-to-pypi.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/workflows/test_pytest.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/.github/workflows/upload-to-codecov.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/12].py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/EnvironmentAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/EnvironmentAnalysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/HybridMotorSimulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/HybridMotorSimulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/SolidMotorSimulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/SolidMotorSimulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/data/GBDPDATA/powerOffDragCurve.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/data/GBDPDATA/powerOffDragCurve.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/data/GBDPDATA/powerOnDragCurve.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/data/GBDPDATA/powerOnDragCurve.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_errors.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_errors.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_inputs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_inputs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_outputs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_outputs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/export_env_analysis.json" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/export_env_analysis.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/control/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/control/controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/environment/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/environment/environment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/environment/environment_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/mathutils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/mathutils/function.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/mathutils/vector_matrix.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/motors/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/motors/fluid.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/motors/hybrid_motor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/motors/liquid_motor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/motors/motor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/motors/solid_motor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/motors/tank.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/motors/tank_geometry.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/aero_surface_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/compare/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/compare/compare.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/compare/compare_flights.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/environment_analysis_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/environment_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/flight_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/fluid_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/hybrid_motor_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/liquid_motor_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/motor_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/rocket_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/solid_motor_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/tank_geometry_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/plots/tank_plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/aero_surface_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/compare_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/controller_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/environment_analysis_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/environment_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/flight_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/fluid_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/hybrid_motor_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/liquid_motor_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/motor_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/parachute_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/rocket_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/solid_motor_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/tank_geometry_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/prints/tank_prints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/rocket/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/rocket/aero_surface.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/rocket/components.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/rocket/parachute.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/rocket/rocket.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/simulation/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/simulation/flight.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/simulation/flight_data_importer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/tools.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/units.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/rocketpy/utilities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flight_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/flight_sim.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rocket.py" beforeDir="false" afterPath="$PROJECT_DIR$/rocket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/sim_results.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738852222721</updated>
       <workItem from="1738852223765" duration="9963000" />
-      <workItem from="1738877905196" duration="15644000" />
+      <workItem from="1738877905196" duration="21071000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <option name="closed" value="true" />
@@ -239,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738944565469</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="UI and reorg">
+      <option name="closed" value="true" />
+      <created>1739205221241</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739205221241</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,12 +184,13 @@
     <MESSAGE value="wrong user being used?" />
     <MESSAGE value="Add example hybrid motor" />
     <MESSAGE value="Sim_results created&#10;__main__ exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sim_results created&#10;__main__ exception" />
+    <MESSAGE value="UI and reorg" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI and reorg" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GBDP$montecarlo.coverage" NAME="montecarlo Coverage Results" MODIFIED="1739123570249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GBDP$montecarlo.coverage" NAME="montecarlo Coverage Results" MODIFIED="1739211459136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GBDP$sim_results.coverage" NAME="sim_results Coverage Results" MODIFIED="1738969026434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GBDP$flight_sim.coverage" NAME="flight_sim Coverage Results" MODIFIED="1738931285798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GBDP$rocket.coverage" NAME="rocket Coverage Results" MODIFIED="1739204070239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GBDP$flight_sim.coverage" NAME="flight_sim Coverage Results" MODIFIED="1739211296858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GBDP$rocket.coverage" NAME="rocket Coverage Results" MODIFIED="1739224692290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
