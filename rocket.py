@@ -1,102 +1,106 @@
-import datetime
-import matplotlib.pyplot as plt
+import tkinter as tk
+from tkinter import simpledialog
 from rocketpy import Environment, SolidMotor, Rocket
 # motor can be SolidMotor, LiquidMotor, or HybridMotor
 from rocketpy import Fluid, CylindricalTank, MassFlowRateBasedTank, HybridMotor
 # necessary methods for a Hybrid Motor
 
-#notes:
-# everything is in basic SL units (kg, m, kgm^2, s, etc.)
+# Create a hidden root window
+root = tk.Tk()
+root.withdraw()
+past = simpledialog.askstring("Use past data?", "Use past data? (Default: No)")
 
+if past in ("y", "yes", "Y", "YES"):
+    print("Using past data...")
+    # Atmospheric Model data import
+    env = Environment(
+        date=(2024, 10, 11, 12),  # Date
+        latitude=39.389700, longitude=-8.288964, elevation=180, # Location
+    )
 
-# Launch site location:
-env = Environment(latitude=32.990254, longitude=-106.974998, elevation=1400)
-#environment uses the location to gather weather conditions from organisations such as NOAA and ECMWF
+    filename = "../data/weather/EuroC_pressure_levels_reanalysis_2001-2021.nc"
 
-# Set the date
-tomorrow = datetime.date.today() + datetime.timedelta(days=1)
+    env.set_atmospheric_model(
+        type="Reanalysis", file=filename, dictionary="ECMWF",
+    )
+else:
+    print("Predicting weather data...")
+    # Launch site location:
+    env = Environment(
+        date=(2025, 2, 20, 12), # Date (Y, M, D, Hr)
+        latitude=39.389700, longitude=-8.288964, elevation=180, # Location
+    )
+    env.set_atmospheric_model(type="Forecast", file="GFS")
 
-env.set_date( # must use a tuple of year, month, day, hour
-    (tomorrow.year, tomorrow.month, tomorrow.day, 12)
-)  # Hour given in UTC time
+## Motor
+motor_type = simpledialog.askstring("Motor Type", "Please insert motor type (Hybrid/Solid). Defaults to solid")
 
-# Set atmospheric model, using GFS forecasts
-env.set_atmospheric_model(type="Forecast", file="GFS")
+if motor_type == "Solid":
+    Pro75M1670 = SolidMotor(
+        thrust_source="data/motors/cesaroni/Cesaroni_M1670.eng",
+        dry_mass=1.815,
+        dry_inertia=(0.125, 0.125, 0.002),
+        nozzle_radius=33 / 1000,
+        grain_number=5,
+        grain_density=1815,
+        grain_outer_radius=33 / 1000,
+        grain_initial_inner_radius=15 / 1000,
+        grain_initial_height=120 / 1000,
+        grain_separation=5 / 1000,
+        grains_center_of_mass_position=0.397,
+        center_of_dry_mass_position=0.317,
+        nozzle_position=0,
+        burn_time=3.9,
+        throat_radius=11 / 1000,
+        coordinate_system_orientation="nozzle_to_combustion_chamber",
+    )
+    motor = Pro75M1670
+else: # Hybrid Motor
+    # Define the fluids
+    oxidizer_liq = Fluid(name="N2O_l", density=1220)
+    oxidizer_gas = Fluid(name="N2O_g", density=1.9277)
 
-if __name__ == "__main__": #prevents this info from showing unless I exec this script
-    env.info() # this will let us know what the weather will look like, including plot
+    # Define tank geometry
+    tank_shape = CylindricalTank(115 / 2000, 0.705)
 
-# Motor
+    # Define tank
+    oxidizer_tank = MassFlowRateBasedTank(
+        name="oxidizer tank",
+        geometry=tank_shape,
+        flux_time=5.2,
+        initial_liquid_mass=4.11,
+        initial_gas_mass=0,
+        liquid_mass_flow_rate_in=0,
+        liquid_mass_flow_rate_out=(4.11 - 0.5) / 5.2,
+        gas_mass_flow_rate_in=0,
+        gas_mass_flow_rate_out=0,
+        liquid=oxidizer_liq,
+        gas=oxidizer_gas,
+    )
 
-Pro75M1670 = SolidMotor(
-    thrust_source="data/motors/cesaroni/Cesaroni_M1670.eng",
-    dry_mass=1.815,
-    dry_inertia=(0.125, 0.125, 0.002),
-    nozzle_radius=33 / 1000,
-    grain_number=5,
-    grain_density=1815,
-    grain_outer_radius=33 / 1000,
-    grain_initial_inner_radius=15 / 1000,
-    grain_initial_height=120 / 1000,
-    grain_separation=5 / 1000,
-    grains_center_of_mass_position=0.397,
-    center_of_dry_mass_position=0.317,
-    nozzle_position=0,
-    burn_time=3.9,
-    throat_radius=11 / 1000,
-    coordinate_system_orientation="nozzle_to_combustion_chamber",
-)
-if __name__ == "__main__":
-    Pro75M1670.info() # Displays information about the motor, including plot
+    example_hybrid = HybridMotor(
+        thrust_source=lambda t: 2000 - (2000 - 1400) / 5.2 * t, #Thrust source can be any function, constant, or CSV/eng file
+        dry_mass=2,
+        dry_inertia=(0.125, 0.125, 0.002),
+        nozzle_radius=63.36 / 2000,
+        grain_number=4,
+        grain_separation=0,
+        grain_outer_radius=0.0575,
+        grain_initial_inner_radius=0.025,
+        grain_initial_height=0.1375,
+        grain_density=900,
+        grains_center_of_mass_position=0.384,
+        center_of_dry_mass_position=0.284,
+        nozzle_position=0,
+        burn_time=5.2,
+        throat_radius=26 / 2000,
+    )
 
-
-## Hybrid Motor
-# Define the fluids
-oxidizer_liq = Fluid(name="N2O_l", density=1220)
-oxidizer_gas = Fluid(name="N2O_g", density=1.9277)
-
-# Define tank geometry
-tank_shape = CylindricalTank(115 / 2000, 0.705)
-
-# Define tank
-oxidizer_tank = MassFlowRateBasedTank(
-    name="oxidizer tank",
-    geometry=tank_shape,
-    flux_time=5.2,
-    initial_liquid_mass=4.11,
-    initial_gas_mass=0,
-    liquid_mass_flow_rate_in=0,
-    liquid_mass_flow_rate_out=(4.11 - 0.5) / 5.2,
-    gas_mass_flow_rate_in=0,
-    gas_mass_flow_rate_out=0,
-    liquid=oxidizer_liq,
-    gas=oxidizer_gas,
-)
-
-example_hybrid = HybridMotor(
-    thrust_source=lambda t: 2000 - (2000 - 1400) / 5.2 * t, #Thrust source can be any function, constant, or CSV/eng file
-    dry_mass=2,
-    dry_inertia=(0.125, 0.125, 0.002),
-    nozzle_radius=63.36 / 2000,
-    grain_number=4,
-    grain_separation=0,
-    grain_outer_radius=0.0575,
-    grain_initial_inner_radius=0.025,
-    grain_initial_height=0.1375,
-    grain_density=900,
-    grains_center_of_mass_position=0.384,
-    center_of_dry_mass_position=0.284,
-    nozzle_position=0,
-    burn_time=5.2,
-    throat_radius=26 / 2000,
-)
-
-# Add oxidizer tank to Hybrid motor
-example_hybrid.add_tank(
-  tank = oxidizer_tank, position = 1.0615
-)
-if __name__ == "__main__":
-    example_hybrid.all_info()
+    # Add oxidizer tank to Hybrid motor
+    example_hybrid.add_tank(
+      tank = oxidizer_tank, position = 1.0615
+    )
+    motor = example_hybrid
 
 ## Creating a Rocket
 
@@ -112,7 +116,7 @@ calisto = Rocket(
 )
 
 #Add motor object
-calisto.add_motor(Pro75M1670, position=-1.255)
+calisto.add_motor(motor, position=-1.255)
 
 #Add (optional) rail guides
 rail_buttons = calisto.set_rail_buttons(
@@ -126,9 +130,9 @@ nose_cone = calisto.add_nose(
     length=0.55829, kind="von karman", position=1.278
 )
 
-#4 fins
+# Fins
 fin_set = calisto.add_trapezoidal_fins(
-    n=4,
+    n=4, #number of fins
     root_chord=0.120,
     tip_chord=0.060,
     span=0.110,
@@ -143,7 +147,7 @@ tail = calisto.add_tail(
 )
 
 #add (optional) parachutes
-main = calisto.add_parachute(
+main = calisto.add_parachute( #Main parachute
     name="main",
     cd_s=10.0,
     trigger=800,      # ejection altitude in meters
@@ -152,7 +156,7 @@ main = calisto.add_parachute(
     noise=(0, 8.3, 0.5),
 )
 
-drogue = calisto.add_parachute(
+drogue = calisto.add_parachute( #Drogue parachute
     name="drogue",
     cd_s=1.0,
     trigger="apogee",  # ejection at apogee
@@ -160,17 +164,18 @@ drogue = calisto.add_parachute(
     lag=1.5,
     noise=(0, 8.3, 0.5),
 )
+
+# Flight simulation is done in a different file so we can define the rocket and execute this code withuot worries
+
+##Plots
 if __name__ == "__main__":
-    #Plot static margin to check stability
+    env.info() # Environment info
+    env.all_info() # Environment-related plots
+    motor.info() # Motor info
+    motor.all_info() # Motor-related plots
 
-    calisto.plots.static_margin() #sim will fail if negative, or too high
+    calisto.plots.static_margin()  #Plot static margin to check stability
+    #sim will fail if negative, or too high
 
-    #Draw rocket
-    calisto.draw() #this helps check that all components are in right position
-
-    ## Rocket has been defined, now we run the simulation.
-    # Going to try to run it in a separate file
-    # This is so we can define the rocket and ensure everything is correct without
-    #crashing the simulation, and then run the simulation when ready.
-
-#[TODO] - clean up code
+    calisto.draw()   # Draw rocket
+    #this helps check that all components are in right position
