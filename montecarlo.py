@@ -1,4 +1,6 @@
-from rocketpy import Environment, SolidMotor, Rocket, Flight, MonteCarlo, Function
+import tkinter as tk
+from tkinter import simpledialog
+from rocketpy import MonteCarlo
 from rocketpy.stochastic import (
     StochasticEnvironment,
     StochasticSolidMotor,
@@ -10,14 +12,17 @@ from rocketpy.stochastic import (
     StochasticParachute,
     StochasticRailButtons,
 )
-import datetime
 from sim import rocket, env, motor, nose_cone, fin_set, rail_buttons, tail, main, drogue, test_flight
 
+# Create a hidden root window (for user inputs)
+root = tk.Tk()
+root.withdraw()
 
 ## Set Stochastic Environment
 stochastic_env = StochasticEnvironment(
     environment=env,
     ensemble_member=list(range(env.num_ensemble_members)),
+    elevation=20,
 )
 
 ## Set Stochastic Motor
@@ -99,22 +104,28 @@ stochastic_flight = StochasticFlight(
     inclination=(84.7, 1),  # (mean, std)
     heading=(53, 2),  # (mean, std)
 )
-stochastic_flight.visualize_attributes()
 
 ## MONTE CARLO
 test_dispersion = MonteCarlo(
-    filename="monte_carlo_analysis_outputs/monte_carlo_class_example", #either save or load to/from this file
+    filename="MonteCarlo/MonteCarlo", #either save or load to/from this file
     environment=stochastic_env,
     rocket=stochastic_rocket,
     flight=stochastic_flight,
 )
 # Simulate flights
+sim_qty = simpledialog.askinteger("Input", "How many simulations would you like to run?")
 test_dispersion.simulate(
-    number_of_simulations=1000, append=False, include_function_data=False
+    number_of_simulations=sim_qty, append=False, include_function_data=True
 )
-# INFO
+
+## INFO
 if __name__ == "__main__":
+    print("STOCHASTIC ENV")
     stochastic_env.visualize_attributes()
+    print("STOCHASTIC MOTOR")
     stochastic_motor.visualize_attributes()
+    print("STOCHASTIC ROCKET")
     stochastic_rocket.visualize_attributes()
+    print("STOCHASTIC FLIGHT")
+    stochastic_flight.visualize_attributes()
 

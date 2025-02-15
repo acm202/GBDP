@@ -1,26 +1,35 @@
 import tkinter as tk
+from datetime import datetime
 from tkinter import simpledialog, messagebox
 from rocketpy import Environment, SolidMotor, Rocket, Flight
 # motor can be SolidMotor, LiquidMotor, or HybridMotor
 from rocketpy import Fluid, CylindricalTank, MassFlowRateBasedTank, HybridMotor
+
 # necessary methods for a Hybrid Motor
 
 # Create a hidden root window (for user inputs)
 root = tk.Tk()
 root.withdraw()
 
-## ENVIRONMENT
-past = simpledialog.askstring("Use past data?", "Use past data? (Default: No)")
+target_year = simpledialog.askinteger("Input", "Enter year:")
+target_month = simpledialog.askinteger("Input", "Enter month:")
+target_day = simpledialog.askinteger("Input", "Enter day:")
 
-if past in ("y", "yes", "Y", "YES"):
+today = datetime.today()
+date = datetime(target_year, target_month, target_day, hour=12)
+
+## ENVIRONMENT
+
+
+if date < today:
     print("Using past data...")
     # Atmospheric Model data import
     env = Environment(
-        date=(2024, 10, 11, 12),  # Date
-        latitude=39.389700, longitude=-8.288964, elevation=180, # Location
+        date=(target_year, target_month, target_day, 12),  # Date
+        latitude=39.389700, longitude=-8.288964, elevation=180,  # Location
     )
 
-    filename = "../data/weather/EuroC_pressure_levels_reanalysis_2001-2021.nc"
+    filename = "data/weather/data_stream-oper_stepType-instant.nc"
 
     env.set_atmospheric_model(
         type="Reanalysis", file=filename, dictionary="ECMWF",
@@ -29,11 +38,14 @@ else:
     print("Predicting weather data...")
     # Launch site location:
     env = Environment(
-        date=(2025, 2, 20, 12), # Date (Y, M, D, Hr)
-        latitude=39.389700, longitude=-8.288964, elevation=180, # Location
+        date=(target_year, target_month, target_day, 0),  # Date (Y, M, D, Hr)
+        latitude=39.389700, longitude=-8.288964, elevation=180,  # Location
     )
-    env.set_atmospheric_model(type="Ensemble", file="GEFS")
-    #Using ensemble for Monte Carlo
+    env.set_atmospheric_model(
+        type="Ensemble",
+        file="GEFS"
+    )
+    #Using ensemble and GEFS for Monte Carlo
     #Can use Forecast and GFS instead for a simple analysis
 
 ## MOTOR
@@ -59,7 +71,7 @@ if motor_type == "Solid":
         coordinate_system_orientation="nozzle_to_combustion_chamber",
     )
     motor = Pro75M1670
-else: # Hybrid Motor
+else:  # Hybrid Motor
     # Define the fluids
     oxidizer_liq = Fluid(name="N2O_l", density=1220)
     oxidizer_gas = Fluid(name="N2O_g", density=1.9277)
@@ -83,7 +95,8 @@ else: # Hybrid Motor
     )
 
     example_hybrid = HybridMotor(
-        thrust_source=lambda t: 2000 - (2000 - 1400) / 5.2 * t, #Thrust source can be any function, constant, or CSV/eng file
+        thrust_source=lambda t: 2000 - (2000 - 1400) / 5.2 * t,
+        #Thrust source can be any function, constant, or CSV/eng file
         dry_mass=2,
         dry_inertia=(0.125, 0.125, 0.002),
         nozzle_radius=63.36 / 2000,
@@ -102,7 +115,7 @@ else: # Hybrid Motor
 
     # Add oxidizer tank to Hybrid motor
     example_hybrid.add_tank(
-      tank = oxidizer_tank, position = 1.0615
+        tank=oxidizer_tank, position=1.0615
     )
     motor = example_hybrid
 
@@ -136,13 +149,13 @@ nose_cone = rocket.add_nose(
 
 # Fins
 fin_set = rocket.add_trapezoidal_fins(
-    n=4, #number of fins
+    n=4,  #number of fins
     root_chord=0.120,
     tip_chord=0.060,
     span=0.110,
     position=-1.04956,
     cant_angle=0.5,
-    airfoil=("data/airfoils/NACA0012-radians.txt","radians"),
+    airfoil=("data/airfoils/NACA0012-radians.txt", "radians"),
 )
 
 #top radius is body radius
@@ -151,16 +164,16 @@ tail = rocket.add_tail(
 )
 
 #add (optional) parachutes
-main = rocket.add_parachute( #Main parachute
+main = rocket.add_parachute(  #Main parachute
     name="main",
     cd_s=10.0,
-    trigger=800,      # ejection altitude in meters
+    trigger=800,  # ejection altitude in meters
     sampling_rate=105,
     lag=1.5,
     noise=(0, 8.3, 0.5),
 )
 
-drogue = rocket.add_parachute( #Drogue parachute
+drogue = rocket.add_parachute(  #Drogue parachute
     name="drogue",
     cd_s=1.0,
     trigger="apogee",  # ejection at apogee
@@ -181,14 +194,20 @@ if fly:
         test_flight.info()  # all prints
 
 ## PLOTS
-if __name__ == "__main__": # Don't show if another script is calling this
-    env.info() # Environment info
-    env.all_info() # Environment-related plots
-    motor.info() # Motor info
-    motor.all_info() # Motor-related plots
+if __name__ == "__main__":  # Don't show if another script is calling this
+    print("ENV INFO")
+    env.info()  # Environment info
+    env.all_info()  # Environment-related plots
+    print("MOTOR INFO")
+    motor.info()  # Motor info
+    motor.all_info()  # Motor-related plots
 
     rocket.plots.static_margin()  #Plot static margin to check stability
     #sim will fail if negative, or too high
 
-    rocket.draw()   # Draw rocket
+    rocket.draw()  # Draw rocket
     #this helps check that all components are in right position
+    print("ENSEMBLE STUFF")
+    env.select_ensemble_member(2) #selects ensemble 2
+    env.info() #prints ensemble 2 info
+    env.all_info()
