@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3af41591-abc3-4b5d-921d-7025fec00640" name="Changes" comment="reorganisation">
+    <list default="true" id="3af41591-abc3-4b5d-921d-7025fec00640" name="Changes" comment="Sensitivity Analysis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_errors.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_errors.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_inputs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_inputs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_outputs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code/docs/notebooks/dispersion_analysis/dispersion_analysis_outputs/valetudo_rocket_v0.disp_outputs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/montecarlo.py" beforeDir="false" afterPath="$PROJECT_DIR$/montecarlo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/montecarlo_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/montecarlo_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/sim.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +97,7 @@
       <workItem from="1738852223765" duration="9963000" />
       <workItem from="1738877905196" duration="32148000" />
       <workItem from="1739282728499" duration="19502000" />
-      <workItem from="1739542076948" duration="3181000" />
+      <workItem from="1739542076948" duration="12496000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <option name="closed" value="true" />
@@ -177,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739225101922</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Sensitivity Analysis">
+      <option name="closed" value="true" />
+      <created>1739657035008</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739657035008</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +203,8 @@
     <MESSAGE value="Sim_results created&#10;__main__ exception" />
     <MESSAGE value="UI and reorg" />
     <MESSAGE value="reorganisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganisation" />
+    <MESSAGE value="Sensitivity Analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sensitivity Analysis" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GBDP$montecarlo.coverage" NAME="montecarlo Coverage Results" MODIFIED="1739304068850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
