@@ -5,7 +5,154 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3af41591-abc3-4b5d-921d-7025fec00640" name="Changes" comment="Create COTS">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COTS/COTS_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/COTS/COTS_sim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/GBDP2024/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/airfoils/NACA0012-radians.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/airfoils/NACA0012-radians.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/airfoils/e473-10e6-degrees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/airfoils/e473-10e6-degrees.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_HP-L1000W.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_HP-L1000W.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_K1000T.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_K1000T.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_K400C.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_K400C.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_K480W.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_K480W.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_K828FJ.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_K828FJ.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_K990DM.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_K990DM.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_L1040DM.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_L1040DM.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_L1940X.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_L1940X.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_L2200G.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_L2200G.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_L2775ST-PS.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_L2775ST-PS.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_M1075DM.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_M1075DM.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_M1305M.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_M1305M.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_M1340W.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_M1340W.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_M1845NT.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_M1845NT.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_M1939W.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_M1939W.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_M2100G.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_M2100G.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_M650W.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_M650W.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/aerotech/AeroTech_M750W.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/aerotech/AeroTech_M750W.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/animal-motor/AMW_1791K710-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/animal-motor/AMW_1791K710-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/animal-motor/AMW_2245K1075-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/animal-motor/AMW_2245K1075-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/animal-motor/AMW_2730L1276-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/animal-motor/AMW_2730L1276-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/animal-motor/AMW_4701L1290-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/animal-motor/AMW_4701L1290-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/animal-motor/AMW_6774M2050-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/animal-motor/AMW_6774M2050-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/animal-motor/AMW_8212M1630-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/animal-motor/AMW_8212M1630-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/animal-motor/AMW_K475.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/animal-motor/AMW_K475.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_1281K360-13A.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_1281K360-13A.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_1597K400-14A.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_1597K400-14A.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_1990K490-16A.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_1990K490-16A.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_2285K260-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_2285K260-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_2546K300-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_2546K300-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_2772L640-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_2772L640-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_3147L935-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_3147L935-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_3618L995-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_3618L995-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_3683L851-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_3683L851-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_4263L1350-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_4263L1350-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_4895L1395-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_4895L1395-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_4937L395-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_4937L395-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_5472M2250-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_5472M2250-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_6118M3100-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_6118M3100-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_6438M1300-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_6438M1300-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_7388M2045-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_7388M2045-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_7545M1590-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_7545M1590-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_7579M1520-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_7579M1520-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_8088M1790-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_8088M1790-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_8429M2020-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_8429M2020-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_8634M6400-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_8634M6400-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_9977M2245-P.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_9977M2245-P.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_M1101.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_M1101.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_M1670.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_M1670.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/cesaroni/Cesaroni_M1670_shifted.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/cesaroni/Cesaroni_M1670_shifted.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/liquid_motor_example/gas_mass_flow_in.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/liquid_motor_example/gas_mass_flow_in.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/liquid_motor_example/gas_mass_flow_out.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/liquid_motor_example/gas_mass_flow_out.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/liquid_motor_example/liquid_mass_flow_in.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/liquid_motor_example/liquid_mass_flow_in.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/liquid_motor_example/liquid_mass_flow_out.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/liquid_motor_example/liquid_mass_flow_out.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_K1127-LB.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_K1127-LB.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_K350-LW.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_K350-LW.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_K830-SF.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_K830-SF.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_K960-LW.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_K960-LW.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_L2050LW.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_L2050LW.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_L780-SF.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_L780-SF.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_L840CT.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_L840CT.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_L930-LW.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_L930-LW.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_M1378LR.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_M1378LR.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_M1882-LW.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_M1882-LW.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_M1969SF.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_M1969SF.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_M3000-LW.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_M3000-LW.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/loki/Loki_M3464LB.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/loki/Loki_M3464LB.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/projeto-jupiter/keron_thrust_curve.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/projeto-jupiter/keron_thrust_curve.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/motors/projeto-jupiter/mandioca_thrust_curve.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/motors/projeto-jupiter/mandioca_thrust_curve.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/EPFL_Bella_Lui/bella_lui_flight_data_filtered.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/EPFL_Bella_Lui/bella_lui_flight_data_filtered.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/NDRT_2020/ndrt_2020_flight_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/NDRT_2020/ndrt_2020_flight_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/andromeda/drag_coefficient.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/andromeda/drag_coefficient.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/andromeda/flight_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/andromeda/flight_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/andromeda/thrust_curve.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/andromeda/thrust_curve.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/astg/DragCoeffOR_off.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/astg/DragCoeffOR_off.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/astg/DragCoeffOR_on.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/astg/DragCoeffOR_on.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/astg/altimeter_halcyon.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/astg/altimeter_halcyon.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/astg/engine_Halcyon_4thHotfire.eng" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/astg/engine_Halcyon_4thHotfire.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/astg/gnss_halcyon.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/astg/gnss_halcyon.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/ExampleTankGasMassData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/ExampleTankGasMassData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/ExampleTankLiquidMassData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/ExampleTankLiquidMassData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/Test135GasMass.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/Test135GasMass.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/Test135LoxMass.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/Test135LoxMass.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/drag.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/drag.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/loxMFR.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/loxMFR.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/loxMass.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/loxMass.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/loxUllage.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/loxUllage.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/pressurantMass.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/pressurantMass.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/pressurantMassFiltered.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/pressurantMassFiltered.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/test124_Lox_Volume.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/test124_Lox_Volume.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/test124_Pressurant_PT.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/test124_Pressurant_PT.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/test124_Propane_Volume.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/test124_Propane_Volume.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/berkeley/test124_Thrust_Curve.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/berkeley/test124_Thrust_Curve.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/calisto/air_brakes_cd.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/calisto/air_brakes_cd.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/calisto/powerOffDragCurve.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/calisto/powerOffDragCurve.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/calisto/powerOnDragCurve.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/calisto/powerOnDragCurve.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/camoes/actuation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/camoes/actuation.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/camoes/drag_airbrakes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/camoes/drag_airbrakes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/camoes/drag_coefficient_power_off.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/camoes/drag_coefficient_power_off.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/camoes/drag_coefficient_power_on.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/camoes/drag_coefficient_power_on.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/camoes/flight_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/camoes/flight_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/camoes/gnss_flight.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/camoes/gnss_flight.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/camoes/thrust_source.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/camoes/thrust_source.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/defiance/DragCurve.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/defiance/DragCurve.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/defiance/Thrust_curve.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/defiance/Thrust_curve.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/erebus11/drag_curve.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/erebus11/drag_curve.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/erebus11/flight_data_filtered.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/erebus11/flight_data_filtered.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/erebus11/thrust_source.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/erebus11/thrust_source.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/genesis/drag_coefficient_power_off.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/genesis/drag_coefficient_power_off.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/genesis/drag_coefficient_power_on.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/genesis/drag_coefficient_power_on.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/genesis/flight_data_faraday.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/genesis/flight_data_faraday.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/genesis/gnss_faraday.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/genesis/gnss_faraday.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/juno3/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/juno3/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/juno3/cots_GNSS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/juno3/cots_GNSS.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/juno3/cots_altimeter.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/juno3/cots_altimeter.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/juno3/drag_curve.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/juno3/drag_curve.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/juno3/srad_telemetry.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/juno3/srad_telemetry.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/lince/drag_coefficient_power_off.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/lince/drag_coefficient_power_off.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/lince/drag_coefficient_power_on.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/lince/drag_coefficient_power_on.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/lince/main_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/lince/main_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/polito/altimeter_cavour.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/polito/altimeter_cavour.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/polito/drag_coefficient_power_off.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/polito/drag_coefficient_power_off.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/polito/drag_coefficient_power_on.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/polito/drag_coefficient_power_on.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/prometheus/2022-06-24-serial-5115-flight-0001-TeleMetrum.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/prometheus/2022-06-24-serial-5115-flight-0001-TeleMetrum.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/prometheus/2022-06-24-serial-6583-flight-0003-TeleMega.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/prometheus/2022-06-24-serial-6583-flight-0003-TeleMega.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/valetudo/Cd_PowerOff_RASAero.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/valetudo/Cd_PowerOff_RASAero.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/valetudo/Cd_PowerOn_RASAero.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/valetudo/Cd_PowerOn_RASAero.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/rockets/valetudo/Valetudo_basemap_final.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/rockets/valetudo/Valetudo_basemap_final.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/sites/switzerland/NASADEM_NC_n46e008.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/sites/switzerland/NASADEM_NC_n46e008.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/EuroC_pressure_levels_reanalysis_2001-2021.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/EuroC_pressure_levels_reanalysis_2001-2021.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/EuroC_single_level_reanalysis_2002_2021.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/EuroC_single_level_reanalysis_2002_2021.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/SpaceportAmerica_2018_ERA-5.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/SpaceportAmerica_2018_ERA-5.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/bella_lui_weather_data_ERA5.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/bella_lui_weather_data_ERA5.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/euroc_2022_all_windows.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/euroc_2022_all_windows.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/euroc_2023_all_windows.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/euroc_2023_all_windows.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/ndrt_2020_weather_data_ERA5.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/ndrt_2020_weather_data_ERA5.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/ndrt_2020_weather_data_ERA5_new.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/ndrt_2020_weather_data_ERA5_new.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/spaceport_america_pressure_levels_2023_hourly.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/spaceport_america_pressure_levels_2023_hourly.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/spaceport_america_pressure_levels_reanalysis_2002_2021.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/spaceport_america_pressure_levels_reanalysis_2002_2021.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/data/weather/spaceport_america_single_level_reanalysis_2002_2021.nc" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather/spaceport_america_single_level_reanalysis_2002_2021.nc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hybrid/sim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/sim_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hybrid/sim_results.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,12 +223,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\OneDrive\Escritorio\Projects\Python\GBDP" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\OneDrive\Escritorio\Projects\Python\GBDP" />
     </key>
   </component>
@@ -105,7 +255,7 @@
       <workItem from="1738877905196" duration="32148000" />
       <workItem from="1739282728499" duration="19502000" />
       <workItem from="1739542076948" duration="12496000" />
-      <workItem from="1739926448948" duration="1672000" />
+      <workItem from="1739926448948" duration="2226000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <option name="closed" value="true" />
@@ -211,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739971907034</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Create COTS">
+      <option name="closed" value="true" />
+      <created>1739972734852</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1739972734852</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +402,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code" />
+    </ignored-roots>
     <MESSAGE value="test commit" />
     <MESSAGE value="wrong user being used?" />
     <MESSAGE value="Add example hybrid motor" />

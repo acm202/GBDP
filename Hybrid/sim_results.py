@@ -94,7 +94,7 @@ test_flight.speed.plot(filename="speed_plot.jpg")
 test_flight.plots.trajectory_3d(filename="trajectory_plot.jpg")
 
 ## Further Analysis
-# Results can be used for Monte Carlo Dispersion Analysis [TODO]
+# Results can be used for Monte Carlo Dispersion Analysis
 #importing used utilities
 from rocketpy.utilities import apogee_by_mass
 from rocketpy.utilities import liftoff_speed_by_mass

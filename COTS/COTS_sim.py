@@ -29,7 +29,7 @@ if date < today:
         latitude=39.389700, longitude=-8.288964, elevation=180,  # Location
     )
 
-    filename = "data/weather/data_stream-oper_stepType-instant.nc"
+    filename = "../data/weather/data_stream-oper_stepType-instant.nc"
 
     env.set_atmospheric_model(
         type="Reanalysis", file=filename, dictionary="ECMWF",
@@ -53,7 +53,7 @@ motor_type = simpledialog.askstring("Motor Type", "Please insert motor type (Hyb
 
 if motor_type == "Solid":
     Pro75M1670 = SolidMotor(
-        thrust_source="data/motors/cesaroni/Cesaroni_M1670.eng",
+        thrust_source="../data/motors/cesaroni/Cesaroni_M1670.eng",
         dry_mass=1.815,
         dry_inertia=(0.125, 0.125, 0.002),
         nozzle_radius=33 / 1000,
@@ -126,8 +126,8 @@ rocket = Rocket(
     radius=127 / 2000,
     mass=14.426,
     inertia=(6.321, 6.321, 0.034),
-    power_off_drag="data/rockets/calisto/powerOffDragCurve.csv",
-    power_on_drag="data/rockets/calisto/powerOnDragCurve.csv",
+    power_off_drag="../data/rockets/calisto/powerOffDragCurve.csv",
+    power_on_drag="../data/rockets/calisto/powerOnDragCurve.csv",
     center_of_mass_without_motor=0,
     coordinate_system_orientation="tail_to_nose",
 )
@@ -155,7 +155,7 @@ fin_set = rocket.add_trapezoidal_fins(
     span=0.110,
     position=-1.04956,
     cant_angle=0.5,
-    airfoil=("data/airfoils/NACA0012-radians.txt", "radians"),
+    airfoil=("../data/airfoils/NACA0012-radians.txt", "radians"),
 )
 
 #top radius is body radius
