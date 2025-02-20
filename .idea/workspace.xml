@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3af41591-abc3-4b5d-921d-7025fec00640" name="Changes" comment="CreateD &quot;DELETE ME&quot;" />
+    <list default="true" id="3af41591-abc3-4b5d-921d-7025fec00640" name="Changes" comment="CreateD &quot;DELETE ME&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/montecarlo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hybrid/montecarlo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hybrid/sim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hybrid/sim_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hybrid/sim_results.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,35 +60,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.MonteCarlo.executor": "Run",
-    "Python.flight_sim.executor": "Run",
-    "Python.montecarlo.executor": "Run",
-    "Python.montecarlo_results.executor": "Run",
-    "Python.rocket.executor": "Run",
-    "Python.sim.executor": "Run",
-    "Python.sim_results.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/User/OneDrive/Escritorio/Projects/Python/GBDP",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.MonteCarlo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.flight_sim.executor&quot;: &quot;Run&quot;,
+    &quot;Python.montecarlo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.montecarlo_results.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rocket.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sim.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sim_results.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Billy/PycharmProjects/GBDP/data/GBDP2024_DATA_FILES&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Billy\PycharmProjects\GBDP\data\GBDP2024_DATA_FILES" />
       <recent name="C:\Users\User\OneDrive\Escritorio\Projects\Python\GBDP" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Billy\PycharmProjects\GBDP\Hybrid\Images" />
       <recent name="C:\Users\User\OneDrive\Escritorio\Projects\Python\GBDP" />
     </key>
   </component>
@@ -112,6 +119,47 @@
       <workItem from="1739974768759" duration="139000" />
       <workItem from="1739974915028" duration="308000" />
       <workItem from="1739975337988" duration="1573000" />
+      <workItem from="1739977116324" duration="294000" />
+      <workItem from="1739977813596" duration="2000" />
+      <workItem from="1739977829472" duration="14000" />
+      <workItem from="1739977991325" duration="5000" />
+      <workItem from="1739978008297" duration="274000" />
+      <workItem from="1739978337245" duration="598000" />
+      <workItem from="1740053831820" duration="230000" />
+      <workItem from="1740054248732" duration="9000" />
+      <workItem from="1740054342994" duration="32000" />
+      <workItem from="1740054820837" duration="305000" />
+      <workItem from="1740055161870" duration="228000" />
+      <workItem from="1740055445220" duration="92000" />
+      <workItem from="1740055549461" duration="70000" />
+      <workItem from="1740055695661" duration="190000" />
+      <workItem from="1740055931722" duration="118000" />
+      <workItem from="1740056058472" duration="24000" />
+      <workItem from="1740056092149" duration="10000" />
+      <workItem from="1740056134401" duration="2000" />
+      <workItem from="1740056146239" duration="24000" />
+      <workItem from="1740056181714" duration="59000" />
+      <workItem from="1740056278184" duration="324000" />
+      <workItem from="1740056617703" duration="20000" />
+      <workItem from="1740056648008" duration="362000" />
+      <workItem from="1740057320070" duration="175000" />
+      <workItem from="1740057602841" duration="74000" />
+      <workItem from="1740057685436" duration="119000" />
+      <workItem from="1740057814046" duration="61000" />
+      <workItem from="1740057922409" duration="426000" />
+      <workItem from="1740058691067" duration="12000" />
+      <workItem from="1740058950037" duration="98000" />
+      <workItem from="1740059099058" duration="8000" />
+      <workItem from="1740059115173" duration="5000" />
+      <workItem from="1740059146811" duration="70000" />
+      <workItem from="1740060155232" duration="92000" />
+      <workItem from="1740060252772" duration="3175000" />
+      <workItem from="1740075860772" duration="11000" />
+      <workItem from="1740076043914" duration="4845000" />
+      <workItem from="1740081595468" duration="432000" />
+      <workItem from="1740082075372" duration="12000" />
+      <workItem from="1740082214450" duration="54000" />
+      <workItem from="1740082338954" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <option name="closed" value="true" />
@@ -249,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739976794801</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="CreateD &quot;DELETE ME&quot;">
+      <option name="closed" value="true" />
+      <created>1739977151097</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1739977151097</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,13 +353,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="CreateD &quot;DELETE ME&quot;" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GBDP$montecarlo.coverage" NAME="montecarlo Coverage Results" MODIFIED="1739304068850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GBDP$sim_results.coverage" NAME="sim_results Coverage Results" MODIFIED="1738969026434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GBDP$flight_sim.coverage" NAME="flight_sim Coverage Results" MODIFIED="1739211296858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GBDP$rocket.coverage" NAME="rocket Coverage Results" MODIFIED="1739224692290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GBDP$test.coverage" NAME="test Coverage Results" MODIFIED="1739232589135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MonteCarlo" />
+    <SUITE FILE_PATH="coverage/GBDP$montecarlo_results.coverage" NAME="montecarlo_results Coverage Results" MODIFIED="1740081605240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hybrid" />
     <SUITE FILE_PATH="coverage/GBDP$MonteCarlo.coverage" NAME="MonteCarlo Coverage Results" MODIFIED="1739303575683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code" />
-    <SUITE FILE_PATH="coverage/GBDP$sim.coverage" NAME="sim Coverage Results" MODIFIED="1739367070735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GBDP$montecarlo_results.coverage" NAME="montecarlo_results Coverage Results" MODIFIED="1739370415591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GBDP$flight_sim.coverage" NAME="flight_sim Coverage Results" MODIFIED="1739211296858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GBDP$sim.coverage" NAME="sim Coverage Results" MODIFIED="1740079919870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hybrid" />
+    <SUITE FILE_PATH="coverage/GBDP$test.coverage" NAME="test Coverage Results" MODIFIED="1739232589135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MonteCarlo" />
+    <SUITE FILE_PATH="coverage/GBDP$montecarlo.coverage" NAME="montecarlo Coverage Results" MODIFIED="1740081985005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hybrid" />
+    <SUITE FILE_PATH="coverage/GBDP$sim_results.coverage" NAME="sim_results Coverage Results" MODIFIED="1740080852735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hybrid" />
   </component>
 </project>

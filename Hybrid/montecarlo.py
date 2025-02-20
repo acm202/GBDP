@@ -25,6 +25,8 @@ stochastic_env = StochasticEnvironment(
     elevation=20,
 )
 
+stochastic_env.visualize_attributes()
+
 ## Set Stochastic Motor
 stochastic_motor = StochasticSolidMotor(
     solid_motor=motor,
@@ -44,7 +46,7 @@ stochastic_motor = StochasticSolidMotor(
 ## Set Stochastic Rocket
 stochastic_rocket = StochasticRocket(
     rocket=rocket,
-    radius=0.0127 / 2000,
+    radius=0.0805,
     mass=(15.426, 0.5, "normal"),
     inertia_11=(6.321, 0),
     inertia_22=0.01,
