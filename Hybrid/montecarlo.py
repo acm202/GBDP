@@ -12,17 +12,17 @@ from rocketpy.stochastic import (
     StochasticParachute,
     StochasticRailButtons,
 )
+
 from sim import rocket, env, motor, nose_cone, fin_set, rail_buttons, tail, main, drogue, test_flight
 
 # Create a hidden root window (for user inputs)
 root = tk.Tk()
 root.withdraw()
 
-## Set Stochastic Environment
+## Set Stochastic environment
 stochastic_env = StochasticEnvironment(
     environment=env,
     ensemble_member=list(range(env.num_ensemble_members)),
-    elevation=20,
 )
 
 stochastic_env.visualize_attributes()

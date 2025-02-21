@@ -45,8 +45,8 @@ else:
         latitude=39.389700, longitude=-8.288964, elevation=123.9,  # Location
     )
     env.set_atmospheric_model(
-        type="Forecast",
-        file="GFS"
+        type="ensemble",
+        file="GEFS"
     )
     #Using ensemble and GEFS for Monte Carlo
     #Can use Forecast and GFS instead for a simple analysis
