@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3af41591-abc3-4b5d-921d-7025fec00640" name="Changes" comment="CreateD &quot;DELETE ME&quot;" />
+    <list default="true" id="3af41591-abc3-4b5d-921d-7025fec00640" name="Changes" comment="CreateD &quot;DELETE ME&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/GBDP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GBDP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COTS/COTS_sim_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/COTS/COTS_sim_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code" beforeDir="false" afterPath="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +43,7 @@
   }
 }</component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="00980a4c-66b5-4635-b0ad-0220e7853117" />
+    <option name="defaultAccountId" value="47363523-2f73-4a1a-93ab-09c2dac28757" />
   </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
@@ -57,6 +62,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.HybridMotorSimulation.executor": "Run",
     "Python.MonteCarlo.executor": "Run",
     "Python.flight_sim.executor": "Run",
     "Python.montecarlo.executor": "Run",
@@ -69,7 +75,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/User/OneDrive/Escritorio/Projects/Python/GBDP",
+    "last_opened_file_path": "C:/Users/User/Downloads",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,7 +117,7 @@
       <workItem from="1739973937013" duration="804000" />
       <workItem from="1739974768759" duration="139000" />
       <workItem from="1739974915028" duration="308000" />
-      <workItem from="1739975337988" duration="1573000" />
+      <workItem from="1739975337988" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <option name="closed" value="true" />
@@ -241,15 +247,7 @@
       <option name="project" value="LOCAL" />
       <updated>1739976374496</updated>
     </task>
-    <task id="LOCAL-00017" summary="CreateD &quot;DELETE ME&quot;">
-      <option name="closed" value="true" />
-      <created>1739976794801</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1739976794801</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,11 +297,12 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GBDP$montecarlo.coverage" NAME="montecarlo Coverage Results" MODIFIED="1739304068850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GBDP$sim_results.coverage" NAME="sim_results Coverage Results" MODIFIED="1738969026434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GBDP$HybridMotorSimulation.coverage" NAME="HybridMotorSimulation Coverage Results" MODIFIED="1739979275468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code" />
     <SUITE FILE_PATH="coverage/GBDP$flight_sim.coverage" NAME="flight_sim Coverage Results" MODIFIED="1739211296858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GBDP$rocket.coverage" NAME="rocket Coverage Results" MODIFIED="1739224692290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GBDP$test.coverage" NAME="test Coverage Results" MODIFIED="1739232589135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MonteCarlo" />
     <SUITE FILE_PATH="coverage/GBDP$MonteCarlo.coverage" NAME="MonteCarlo Coverage Results" MODIFIED="1739303575683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GBDP2024/Last_Year_GBDP_code" />
-    <SUITE FILE_PATH="coverage/GBDP$sim.coverage" NAME="sim Coverage Results" MODIFIED="1739367070735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GBDP$montecarlo_results.coverage" NAME="montecarlo_results Coverage Results" MODIFIED="1739370415591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GBDP$sim.coverage" NAME="sim Coverage Results" MODIFIED="1739978568692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hybrid" />
   </component>
 </project>
