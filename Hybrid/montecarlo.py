@@ -19,11 +19,14 @@ from sim import rocket, env, motor, nose_cone, fin_set, rail_buttons, tail, main
 root = tk.Tk()
 root.withdraw()
 
+#
+print(f"Number of ensemble members: {env.num_ensemble_members}")
+
 ## Set Stochastic environment
 stochastic_env = StochasticEnvironment(
     environment=env,
-    ensemble_member=list(range(env.num_ensemble_members)),
 )
+#Removed "ensemble_member=list(range(env.num_ensemble_members)),", so it lets it automatically passes the ensemble members to the Stochastic environment so long as it says an ensemble
 
 stochastic_env.visualize_attributes()
 
@@ -109,7 +112,7 @@ stochastic_flight = StochasticFlight(
 
 ## MONTE CARLO
 test_dispersion = MonteCarlo(
-    filename="MonteCarlo/MonteCarlo", #either save or load to/from this file
+    filename="MonteCarlo", #either save or load to/from this file
     environment=stochastic_env,
     rocket=stochastic_rocket,
     flight=stochastic_flight,

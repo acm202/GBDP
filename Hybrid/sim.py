@@ -50,6 +50,7 @@ else:
     )
     #Using ensemble and GEFS for Monte Carlo
     #Can use Forecast and GFS instead for a simple analysis
+    #Code won't work at 6 and 12
 
 ## MOTOR
 motor_type = simpledialog.askstring("Motor Type", "Please insert motor type (Hybrid/Solid). Defaults to solid")
