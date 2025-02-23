@@ -63,7 +63,7 @@ test_flight.plots.stability_and_control_data()
 
 # Exporting trajectory to Google Earth
 test_flight.export_kml(
-    file_name="trajectory.kml",
+    file_name="Graphs&KMLs/trajectory.kml",
     extrude=True,
     altitude_mode="relative_to_ground",
 )
@@ -78,7 +78,7 @@ print(test_flight.speed.source)
 
 #exporting rocketpy.Flight.angle_of_attack() and .mach_number()
 test_flight.export_data(
-    "rocket_flight_data.csv", #file name
+    "Graphs&KMLs/rocket_flight_data.csv", #file name
     "angle_of_attack", #attribute to export
     "mach_number",
     time_step=1.0, #sets sampling rate, if left empty defaults to every instance of the solver
@@ -87,11 +87,11 @@ test_flight.export_data(
 ## Saving and storing plots (can be as png, jpg, pdf, and more)
 
 #store rocket drawing
-rocket.draw(filename="rocket_drawing.png")
+rocket.draw(filename="Graphs&KMLs/rocket_drawing.png")
 #speed plot
-test_flight.speed.plot(filename="speed_plot.jpg")
+test_flight.speed.plot(filename="Graphs&KMLs/speed_plot.jpg")
 #trajectory plot
-test_flight.plots.trajectory_3d(filename="trajectory_plot.jpg")
+test_flight.plots.trajectory_3d(filename="Graphs&KMLs/trajectory_plot.jpg")
 
 ## Further Analysis
 # Results can be used for Monte Carlo Dispersion Analysis
@@ -134,11 +134,11 @@ for factor in [-0.5, -0.2, 0.1, 0.4, 0.7]:
     rocket2.aerodynamic_surfaces.pop(-1)
 
     fin_set = rocket2.add_trapezoidal_fins(
-        n=4,
-        root_chord=0.120,
-        tip_chord=0.040,
-        span=0.100,
-        position=-1.04956 * factor,
+        n=3,
+        root_chord=0.302,
+        tip_chord=0.13,
+        span=0.202,
+        position=0.3756 * factor,
     )
     # Simulate
     test_flight = Flight(

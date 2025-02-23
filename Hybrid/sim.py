@@ -1,9 +1,11 @@
+#Simulates everything for the Hybrid Rocket
+
 import tkinter as tk
 from datetime import datetime
 from tkinter import simpledialog, messagebox
 from rocketpy import Environment, SolidMotor, Rocket, Flight
 # motor can be SolidMotor, LiquidMotor, or HybridMotor
-from rocketpy import Fluid, CylindricalTank, MassFlowRateBasedTank, HybridMotor
+from rocketpy import Fluid, CylindricalTank, MassFlowRateBasedTank, HybridMotor, MassBasedTank
 
 # necessary methods for a Hybrid Motor
 
@@ -20,13 +22,14 @@ date = datetime(target_year, target_month, target_day, hour=12)
 
 ## ENVIRONMENT
 
+# Location has been set to the location from last years
 
 if date < today:
     print("Using past data...")
     # Atmospheric Model data import
     env = Environment(
         date=(target_year, target_month, target_day, 12),  # Date
-        latitude=39.389700, longitude=-8.288964, elevation=180,  # Location
+        latitude=39.389700, longitude=-8.288964, elevation=123.9,  # Location
     )
 
     filename = "../data/weather/data_stream-oper_stepType-instant.nc"
@@ -39,14 +42,15 @@ else:
     # Launch site location:
     env = Environment(
         date=(target_year, target_month, target_day, 0),  # Date (Y, M, D, Hr)
-        latitude=39.389700, longitude=-8.288964, elevation=180,  # Location
+        latitude=39.389700, longitude=-8.288964, elevation=123.9,  # Location
     )
     env.set_atmospheric_model(
-        type="Ensemble",
+        type="ensemble",
         file="GEFS"
     )
     #Using ensemble and GEFS for Monte Carlo
     #Can use Forecast and GFS instead for a simple analysis
+    #Code won't work at 6 and 12
 
 ## MOTOR
 motor_type = simpledialog.askstring("Motor Type", "Please insert motor type (Hybrid/Solid). Defaults to solid")
@@ -73,49 +77,49 @@ if motor_type == "Solid":
     motor = Pro75M1670
 else:  # Hybrid Motor
     # Define the fluids
-    oxidizer_liq = Fluid(name="N2O_l", density=1220)
-    oxidizer_gas = Fluid(name="N2O_g", density=1.9277)
+    oxidizer_liq = Fluid(name="N2O_l", density=828.2592)
+    oxidizer_gas = Fluid(name="N2O_g", density=131.7148)
 
     # Define tank geometry
-    tank_shape = CylindricalTank(115 / 2000, 0.705)
+    tank_shape = CylindricalTank(0.074, 0.591)
 
     # Define tank
     oxidizer_tank = MassFlowRateBasedTank(
-        name="oxidizer tank",
-        geometry=tank_shape,
-        flux_time=5.2,
-        initial_liquid_mass=4.11,
-        initial_gas_mass=0,
-        liquid_mass_flow_rate_in=0,
-        liquid_mass_flow_rate_out=(4.11 - 0.5) / 5.2,
-        gas_mass_flow_rate_in=0,
-        gas_mass_flow_rate_out=0,
-        liquid=oxidizer_liq,
-        gas=oxidizer_gas,
-    )
+       name="oxidizer tank",
+       geometry=tank_shape,
+       flux_time=5.2,
+       initial_liquid_mass=4.11,
+       initial_gas_mass=0,
+       liquid_mass_flow_rate_in=0,
+       liquid_mass_flow_rate_out=(4.11 - 0.5) / 5.2,
+       gas_mass_flow_rate_in=0,
+       gas_mass_flow_rate_out=0,
+       liquid=oxidizer_liq,
+       gas=oxidizer_gas,
+     )
 
     example_hybrid = HybridMotor(
         thrust_source=lambda t: 2000 - (2000 - 1400) / 5.2 * t,
         #Thrust source can be any function, constant, or CSV/eng file
-        dry_mass=2,
+        dry_mass=3.11,
         dry_inertia=(0.125, 0.125, 0.002),
-        nozzle_radius=63.36 / 2000,
-        grain_number=4,
+        nozzle_radius=0.014,
+        grain_number=1,
         grain_separation=0,
-        grain_outer_radius=0.0575,
-        grain_initial_inner_radius=0.025,
-        grain_initial_height=0.1375,
-        grain_density=900,
-        grains_center_of_mass_position=0.384,
-        center_of_dry_mass_position=0.284,
+        grain_outer_radius=0.038,
+        grain_initial_inner_radius=0.0211354,
+        grain_initial_height=0.2531922,
+        grain_density=920,
+        grains_center_of_mass_position=0.28427,
+        center_of_dry_mass_position=0.28427,
         nozzle_position=0,
-        burn_time=5.2,
-        throat_radius=26 / 2000,
+        burn_time=7.43,
+        throat_radius=0.012,
     )
 
     # Add oxidizer tank to Hybrid motor
     example_hybrid.add_tank(
-        tank=oxidizer_tank, position=1.0615
+        tank=oxidizer_tank, position=1.11305
     )
     motor = example_hybrid
 
@@ -123,44 +127,44 @@ else:  # Hybrid Motor
 
 # Create rocket object
 rocket = Rocket(
-    radius=127 / 2000,
-    mass=14.426,
-    inertia=(6.321, 6.321, 0.034),
+    radius=0.0805,
+    mass=25.025,
+    inertia=(16.33, 16.33, 0.099),
     power_off_drag="../data/rockets/calisto/powerOffDragCurve.csv",
     power_on_drag="../data/rockets/calisto/powerOnDragCurve.csv",
-    center_of_mass_without_motor=0,
+    center_of_mass_without_motor=1.23903,
     coordinate_system_orientation="tail_to_nose",
 )
 
 #Add motor object
-rocket.add_motor(motor, position=-1.255)
+rocket.add_motor(motor, position=0.0736)
 
 #Add (optional) rail guides
 rail_buttons = rocket.set_rail_buttons(
-    upper_button_position=0.0818,
-    lower_button_position=-0.6182,
+    upper_button_position=0.1818,
+    lower_button_position=0.8182,
     angular_position=45,
 )
 
 #Add aerodynamic components:
 nose_cone = rocket.add_nose(
-    length=0.55829, kind="von karman", position=1.278
+    length=0.5528, kind="parabolic", position=2.99
 )
 
 # Fins
 fin_set = rocket.add_trapezoidal_fins(
-    n=4,  #number of fins
-    root_chord=0.120,
-    tip_chord=0.060,
-    span=0.110,
-    position=-1.04956,
-    cant_angle=0.5,
-    airfoil=("../data/airfoils/NACA0012-radians.txt", "radians"),
+    n=3,  #number of fins
+    root_chord=0.302,
+    tip_chord=0.13,
+    span=0.202,
+    position=0.3756,
+    cant_angle=0,
+    #airfoil=("../data/airfoils/NACA0012-radians.txt", "radians"), # Removed to simulate last years
 )
 
 #top radius is body radius
 tail = rocket.add_tail(
-    top_radius=0.0635, bottom_radius=0.0435, length=0.060, position=-1.194656
+    top_radius=0.0805, bottom_radius=0.058, length=0.0736, position=0
 )
 
 #add (optional) parachutes
@@ -181,6 +185,23 @@ drogue = rocket.add_parachute(  #Drogue parachute
     lag=1.5,
     noise=(0, 8.3, 0.5),
 )
+
+# Payload related information
+Payload = Rocket(
+    radius=127 / 2000,
+    mass=1,
+    inertia=(0.1, 0.1, 0.001),
+    power_off_drag=0.5,
+    power_on_drag=0.5,
+    center_of_mass_without_motor=0,
+)
+
+Payload_main = Payload.add_parachute(
+    name="Main",
+    cd_s = 2.2*0.1379511112,
+    trigger= "apogee",  # ejection altitude in meters
+)
+
 fly = messagebox.askyesno("Flight?", "Run flight simulation?")
 
 if fly:
@@ -207,7 +228,7 @@ if __name__ == "__main__":  # Don't show if another script is calling this
 
     rocket.draw()  # Draw rocket
     #this helps check that all components are in right position
-    print("ENSEMBLE STUFF")
-    env.select_ensemble_member(2) #selects ensemble 2
-    env.info() #prints ensemble 2 info
-    env.all_info()
+    #print("ENSEMBLE STUFF")
+    #env.select_ensemble_member(2) #selects ensemble 2
+    #env.info() #prints ensemble 2 info
+    #env.all_info()

@@ -12,18 +12,23 @@ from rocketpy.stochastic import (
     StochasticParachute,
     StochasticRailButtons,
 )
+
 from sim import rocket, env, motor, nose_cone, fin_set, rail_buttons, tail, main, drogue, test_flight
 
 # Create a hidden root window (for user inputs)
 root = tk.Tk()
 root.withdraw()
 
-## Set Stochastic Environment
+#
+print(f"Number of ensemble members: {env.num_ensemble_members}")
+
+## Set Stochastic environment
 stochastic_env = StochasticEnvironment(
     environment=env,
-    ensemble_member=list(range(env.num_ensemble_members)),
-    elevation=20,
 )
+#Removed "ensemble_member=list(range(env.num_ensemble_members)),", so it lets it automatically passes the ensemble members to the Stochastic environment so long as it says an ensemble
+
+stochastic_env.visualize_attributes()
 
 ## Set Stochastic Motor
 stochastic_motor = StochasticSolidMotor(
@@ -44,7 +49,7 @@ stochastic_motor = StochasticSolidMotor(
 ## Set Stochastic Rocket
 stochastic_rocket = StochasticRocket(
     rocket=rocket,
-    radius=0.0127 / 2000,
+    radius=0.0805,
     mass=(15.426, 0.5, "normal"),
     inertia_11=(6.321, 0),
     inertia_22=0.01,
@@ -107,7 +112,7 @@ stochastic_flight = StochasticFlight(
 
 ## MONTE CARLO
 test_dispersion = MonteCarlo(
-    filename="MonteCarlo/MonteCarlo", #either save or load to/from this file
+    filename="MonteCarlo", #either save or load to/from this file
     environment=stochastic_env,
     rocket=stochastic_rocket,
     flight=stochastic_flight,
