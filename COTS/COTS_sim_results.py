@@ -69,7 +69,7 @@ test_flight.export_kml(
 )
 
 # speed up to time of first parachute deployment (apogee)
-test_flight.speed.plot(0, test_flight.apogee_time)
+test_flight.speed.plot(0, test_flight.apogee_time) #plot() takes as arguments time1 to time2
 
 #array of speed of entire flight in form ([time1,speed1],...)
 print(test_flight.speed.source)
