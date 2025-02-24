@@ -112,7 +112,7 @@ stochastic_flight = StochasticFlight(
 
 ## MONTE CARLO
 test_dispersion = MonteCarlo(
-    filename="MonteCarlo", #either save or load to/from this file
+    filename="MonteCarlo/MonteCarlo_TestDispersion", #either save or load to/from this file
     environment=stochastic_env,
     rocket=stochastic_rocket,
     flight=stochastic_flight,
